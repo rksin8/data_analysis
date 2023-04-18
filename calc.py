@@ -1,3 +1,4 @@
+#new comment
 # Perform simple arithmetic encoded in an input string:
 # '1 + 2' -> 3, or '1 - 2' -> -1.
 def compute(expression):
