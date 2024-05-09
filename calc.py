@@ -1,16 +1,19 @@
 # Perform simple arithmetic encoded in an input string:
 # '1 + 2' -> 3, or '1 - 2' -> -1.
+
+#! last edit 9 May 2024 by Ali
+
 def compute(expression):
-    num0, operator, num1 = expression.split(' ')
-    num0, num1 = float(num0), float(num1)
+    Value1, operator, Value2 = expression.split(' ')
+    Value1, Value2 = float(Value1), float(Value2)
     if operator == '+':
-        return num0 + num1
+        return Value1 + Value2
     elif operator == '-':
-        return num0 - num1
+        return Value1 - Value2
     elif operator == '*':
-        return num0 * num1
+        return Value1 * Value2
     elif operator == '/':
-        return num0 / num1
+        return Value1 / Value2
     else:
         print('unknown operator!')
         return None
